@@ -5,13 +5,13 @@ Escala de notas: 0 a 100. Se aprueba con 51 o más.
 import sqlite3
 
 NOTA_APROBACION = 51
-#hola bola 2
+#hola bola 2, correccion 
 
 
 def calcular_promedio(notas):
     if not notas:
         raise ValueError("No se puede calcular el promedio de una lista vacía")
-    return sum(notas)
+    return sum(notas) / len(notas)
 
 
 def nota_final(parcial1, parcial2, examen_final, practicas):
@@ -50,7 +50,7 @@ def buscar_estudiante(conexion, nombre):
 
 
 def mejores_estudiantes(estudiantes, cantidad=3):
-    ordenados = sorted(estudiantes, key=lambda e: e["nota"])
+    ordenados = sorted(estudiantes, key=lambda e: e["nota"], reverse=True)
     return ordenados[:cantidad]
 
 

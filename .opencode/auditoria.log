@@ -2,3 +2,30 @@
 2026-10-14 13:17:22 | bash               | git -C "C:\Users\Wilson Campero\hooks\hooks" status --short; git -C "C:\Users\Wilson Campero\hooks\hooks" branch --show-
 2026-10-14 13:17:29 | bash               | git -C "C:\Users\Wilson Campero\hooks\hooks" diff --stat; git -C "C:\Users\Wilson Campero\hooks\hooks" log origin/main..
 2026-10-14 13:17:56 | bash               | git -C "C:\Users\Wilson Campero\hooks\hooks" log "origin/main..main" --oneline 2>&1 | Select-Object -Last 5
+2026-10-14 13:18:52 | bash               | git -C "C:\Users\Wilson Campero\hooks\hooks" add ".opencode/auditoria.log" "proyecto-demo/notas.py"; if ($?) { git -C "C
+2026-10-14 13:19:00 | bash               | git -C "C:\Users\Wilson Campero\hooks\hooks" push origin main 2>&1 | Select-Object -Last 20
+2026-10-14 13:23:26 | bash               | gh -C "C:\Users\Wilson Campero\hooks\hooks" run list --limit 5 2>&1 | Select-Object -Last 60
+2026-10-14 13:23:31 | bash               | cmd /c "where gh" 2>&1 | Select-Object -Last 5
+2026-10-14 13:27:31 | PLUGIN cargado     | guardian.js está activo
+2026-10-14 13:27:47 | bash               | Get-ChildItem -Force -Recurse -Depth 2 -Path ".github" -ErrorAction SilentlyContinue | Select-Object FullName
+2026-10-14 13:27:47 | bash               | Get-ChildItem -Force | Select-Object Name, Mode
+2026-10-14 13:27:47 | bash               | git status; echo "---"; git log --oneline -10; echo "---"; git remote -v
+2026-10-14 13:27:51 | read               | C:/Users/Wilson Campero/hooks/hooks/.github/workflows/tests.yml
+2026-10-14 13:27:51 | read               | C:/Users/Wilson Campero/hooks/hooks/proyecto-demo/notas.py
+2026-10-14 13:27:51 | bash               | git diff
+2026-10-14 13:27:57 | bash               | Get-ChildItem -Recurse -Force -Path "proyecto-demo" -File -ErrorAction SilentlyContinue | Select-Object FullName, Length
+2026-10-14 13:27:57 | bash               | cmd /c "where gh" 2>&1; echo "---"; gh --version 2>&1
+2026-10-14 13:27:59 | bash               | Get-ChildItem -Recurse -Force -Path ".opencode","hooks",".claude",".codex" -File -ErrorAction SilentlyContinue | Select-
+2026-10-14 13:28:05 | read               | C:/Users/Wilson Campero/hooks/hooks/proyecto-demo/tests/test_notas.py
+2026-10-14 13:28:05 | read               | C:/Users/Wilson Campero/hooks/hooks/hooks/verificar_push.py
+2026-10-14 13:28:07 | bash               | python --version 2>&1; echo "---"; python -B -m unittest discover -s tests -v 2>&1
+2026-10-14 13:28:15 | read               | C:/Users/Wilson Campero/hooks/hooks/.opencode/plugins/guardian.js
+2026-10-14 13:28:17 | bash               | Get-ChildItem -Force -Path ".opencode" | Select-Object Name; echo "---config---"; Get-Content ".opencode\opencode.json*"
+2026-10-14 13:28:17 | bash               | git log --oneline --all -20; echo "---stash---"; git stash list; echo "---branches---"; git branch -a
+2026-10-14 13:28:23 | edit               | C:/Users/Wilson Campero/hooks/hooks/proyecto-demo/notas.py
+2026-10-14 13:28:23 | edit               | C:/Users/Wilson Campero/hooks/hooks/proyecto-demo/notas.py
+2026-10-14 13:28:23 | PRUEBAS            | OK
+2026-10-14 13:28:24 | webfetch           | 
+2026-10-14 13:28:24 | PRUEBAS            | OK
+2026-10-14 13:28:30 | webfetch           | 
+2026-10-14 13:28:37 | bash               | python -B -m unittest discover -s tests -v 2>&1
