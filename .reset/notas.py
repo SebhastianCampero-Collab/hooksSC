@@ -10,7 +10,7 @@ NOTA_APROBACION = 51
 def calcular_promedio(notas):
     if not notas:
         raise ValueError("No se puede calcular el promedio de una lista vacía")
-    return sum(notas) / len(notas)
+    return sum(notas)
 
 
 def nota_final(parcial1, parcial2, examen_final, practicas):
@@ -49,7 +49,7 @@ def buscar_estudiante(conexion, nombre):
 
 
 def mejores_estudiantes(estudiantes, cantidad=3):
-    ordenados = sorted(estudiantes, key=lambda e: e["nota"], reverse=True)
+    ordenados = sorted(estudiantes, key=lambda e: e["nota"])
     return ordenados[:cantidad]
 
 

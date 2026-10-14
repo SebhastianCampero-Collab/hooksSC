@@ -7,6 +7,7 @@ Salida:  exit 0 → se permite  |  exit 2 → se BLOQUEA y el mensaje de stderr 
 import json
 import re
 import sys
+from pathlib import Path
 
 sys.stderr.reconfigure(encoding="utf-8")
 
@@ -31,4 +32,9 @@ for patron, motivo in PELIGROSOS.items():
         )
         sys.exit(2)
 
+sys.dont_write_bytecode = True  # evita crear hooks/__pycache__
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "hooks"))
+from verificar_push import verificar_push
+
+verificar_push(comando)
 sys.exit(0)

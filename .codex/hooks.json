@@ -20,8 +20,8 @@
             "type": "command",
             "command": "python3 .codex/hooks/bloquear_comandos.py",
             "commandWindows": "python .codex/hooks/bloquear_comandos.py",
-            "timeout": 10,
-            "statusMessage": "Hook: revisando que el comando sea seguro..."
+            "timeout": 60,
+            "statusMessage": "Hook: revisando comando y pruebas antes del push..."
           }
         ]
       }

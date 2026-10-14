@@ -17,7 +17,8 @@
           {
             "type": "command",
             "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/bloquear_comandos.py\"",
-            "statusMessage": "Hook: revisando que el comando sea seguro..."
+            "timeout": 60,
+            "statusMessage": "Hook: revisando comando y pruebas antes del push..."
           }
         ]
       }
