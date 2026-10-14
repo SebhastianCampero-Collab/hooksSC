@@ -1,0 +1,4 @@
+2026-10-14 13:16:03 | PLUGIN cargado     | guardian.js está activo
+2026-10-14 13:17:22 | bash               | git -C "C:\Users\Wilson Campero\hooks\hooks" status --short; git -C "C:\Users\Wilson Campero\hooks\hooks" branch --show-
+2026-10-14 13:17:29 | bash               | git -C "C:\Users\Wilson Campero\hooks\hooks" diff --stat; git -C "C:\Users\Wilson Campero\hooks\hooks" log origin/main..
+2026-10-14 13:17:56 | bash               | git -C "C:\Users\Wilson Campero\hooks\hooks" log "origin/main..main" --oneline 2>&1 | Select-Object -Last 5

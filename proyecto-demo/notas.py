@@ -5,6 +5,7 @@ Escala de notas: 0 a 100. Se aprueba con 51 o más.
 import sqlite3
 
 NOTA_APROBACION = 51
+#hola bola 2
 
 
 def calcular_promedio(notas):
