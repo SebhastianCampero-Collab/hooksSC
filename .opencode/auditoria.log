@@ -1,7 +1,0 @@
-2026-10-12 22:59:35 | PLUGIN cargado     | guardian.js está activo
-2026-10-12 23:01:28 | shell              | git status
-2026-10-12 23:01:32 | read               | C:/UPB/hooks
-2026-10-12 23:01:39 | read               | C:/UPB/hooks/GUION-HOOKS.md
-2026-10-12 23:01:39 | shell              | git status
-2026-10-12 23:02:33 | read               | C:/UPB/hooks/.claude/hooks/bloquear_comandos.py
-2026-10-13 12:25:58 | PLUGIN cargado     | guardian.js está activo
